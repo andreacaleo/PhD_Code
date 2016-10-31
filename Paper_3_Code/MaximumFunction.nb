@@ -1,0 +1,409 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12298,        399]
+NotebookOptionsPosition[     11646,        371]
+NotebookOutlinePosition[     11987,        386]
+CellTagsIndexPosition[     11944,        383]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Maximize", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"x", "-", "A1"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "-", "B1"}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "-", "C1"}], ")"}]}]], ",", 
+     RowBox[{"A1", ">", "B1"}], ",", 
+     RowBox[{"B1", ">", "C1"}]}], "}"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.645260454668671*^9, 3.64526045729419*^9}, {
+  3.645260527778143*^9, 3.6452605565330706`*^9}, {3.645260619370509*^9, 
+  3.645260631472905*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   TagBox[GridBox[{
+      {"\[Piecewise]", GridBox[{
+         {
+          RowBox[{"-", "\[Infinity]"}], 
+          RowBox[{"!", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"B1", ">", "C1"}], "&&", 
+             RowBox[{"A1", ">", "B1"}]}], ")"}]}]},
+         {"\[Infinity]", 
+          TagBox["True",
+           "PiecewiseDefault",
+           AutoDelete->True]}
+        },
+        AllowedDimensions->{2, Automatic},
+        Editable->True,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
+          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}},
+           "RowsIndexed" -> {}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.27999999999999997`], {
+             Offset[0.84]}, 
+            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.2], {
+             Offset[0.4]}, 
+            Offset[0.2]}, "RowsIndexed" -> {}},
+        Selectable->True]}
+     },
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.35]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    "Piecewise",
+    DeleteWithContents->True,
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "Indeterminate"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.64526053179895*^9, 3.6452605570681877`*^9}, {
+  3.6452606212658973`*^9, 3.6452606320130396`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     FractionBox[
+      RowBox[{"x", "-", "A1"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "-", "B1"}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "-", "C1"}], ")"}]}]], ")"}], "/.", 
+    RowBox[{"(", 
+     RowBox[{"Solve", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"x", "-", "A1"}], 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", "B1"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"x", "-", "C1"}], ")"}]}]], ",", "x"}], "]"}], 
+        "\[Equal]", "0"}], ",", "x"}], "]"}], ")"}]}], ")"}], "//", 
+  "Simplify"}]], "Input",
+ CellChangeTimes->{{3.6452606752965813`*^9, 3.6452607272018538`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox[
+     SqrtBox[
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{"A1", "-", "C1"}], ")"}]}]], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "A1"}], "+", "B1", "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "C1"}], ")"}]}]]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "A1"}], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "C1"}], ")"}]}]], "+", "C1"}], ")"}]}]]}], ",", 
+   FractionBox[
+    SqrtBox[
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"A1", "-", "C1"}], ")"}]}]], 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"A1", "-", "B1", "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"A1", "-", "C1"}], ")"}]}]]}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"A1", "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"A1", "-", "C1"}], ")"}]}]], "-", "C1"}], ")"}]}]]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.645260683298163*^9, 3.6452607274769087`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"D", "[", 
+     RowBox[{
+      RowBox[{"D", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"x", "-", "A1"}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "-", "B1"}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{"x", "-", "C1"}], ")"}]}]], ")"}], ",", "x"}], "]"}], ",",
+       "x"}], "]"}], "/.", 
+    RowBox[{"(", 
+     RowBox[{"Solve", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          FractionBox[
+           RowBox[{"x", "-", "A1"}], 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"x", "-", "B1"}], ")"}], 
+            RowBox[{"(", 
+             RowBox[{"x", "-", "C1"}], ")"}]}]], ",", "x"}], "]"}], 
+        "\[Equal]", "0"}], ",", "x"}], "]"}], ")"}]}], ")"}], "//", 
+  "Simplify"}]], "Input",
+ CellChangeTimes->{{3.645260771290584*^9, 3.645260792894859*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"2", " ", 
+     RowBox[{"(", 
+      RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{"A1", "-", "C1"}], ")"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "2"}], " ", "A1"}], "+", "B1", "+", 
+       RowBox[{"2", " ", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "C1"}], ")"}]}]]}], "+", "C1"}], ")"}]}], 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "A1"}], "+", "B1", "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "C1"}], ")"}]}]]}], ")"}], "3"], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "A1"}], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"A1", "-", "C1"}], ")"}]}]], "+", "C1"}], ")"}], "3"]}]], 
+   ",", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"2", " ", 
+      RowBox[{"(", 
+       RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{"A1", "-", "C1"}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"2", " ", "A1"}], "-", "B1", "+", 
+        RowBox[{"2", " ", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "C1"}], ")"}]}]]}], "-", "C1"}], ")"}]}], 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"A1", "-", "B1", "+", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "C1"}], ")"}]}]]}], ")"}], "3"], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"A1", "+", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "B1"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"A1", "-", "C1"}], ")"}]}]], "-", "C1"}], ")"}], 
+       "3"]}]]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.6452607840080996`*^9, 3.645260793279953*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"x", "-", "A1"}], 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"x", "+", "A2"}], ")"}], 
+       RowBox[{"(", 
+        RowBox[{"x", "+", "3"}], ")"}]}]], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "0", ",", "10"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"A1", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"A2", ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6452608043621297`*^9, 3.645260880097124*^9}, {
+  3.6452609254761066`*^9, 3.6452610654738235`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`A1$$ = 
+    1.8413162231445312`, $CellContext`A2$$ = -0.1671886444091797, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`A1$$], -5, 5}, {
+      Hold[$CellContext`A2$$], -5, 5}}, Typeset`size$$ = {360., {104., 108.}},
+     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`A1$12674$$ = 0, $CellContext`A2$12675$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`A1$$ = -5, $CellContext`A2$$ = -5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`A1$$, $CellContext`A1$12674$$, 0], 
+        Hold[$CellContext`A2$$, $CellContext`A2$12675$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Plot[($CellContext`x - $CellContext`A1$$)/(($CellContext`x + \
+$CellContext`A2$$) ($CellContext`x + 3)), {$CellContext`x, 0, 10}], 
+      "Specifications" :> {{$CellContext`A1$$, -5, 5}, {$CellContext`A2$$, -5,
+          5}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{411., {218., 225.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.6452608499811754`*^9, 3.645260880612224*^9}, {
+  3.645260931957403*^9, 3.6452610667790785`*^9}}]
+}, Open  ]]
+},
+WindowSize->{750, 836},
+WindowMargins->{{Automatic, 462}, {7, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 554, 16, 48, "Input"],
+Cell[1137, 40, 1991, 55, 42, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3165, 100, 813, 27, 48, "Input"],
+Cell[3981, 129, 1585, 55, 112, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5603, 189, 964, 32, 70, "Input"],
+Cell[6570, 223, 2391, 79, 118, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8998, 307, 689, 21, 48, "Input"],
+Cell[9690, 330, 1940, 38, 460, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
